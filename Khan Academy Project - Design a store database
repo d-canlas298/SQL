@@ -1,0 +1,43 @@
+% This is my version of a store's database. All prices are (unfortunately) made up for the sake of this project. All prices are to be assumed in full dollar amounts.
+
+
+
+/** Store Items
+    Tanq (5)
+    Captain Morgan (6)
+    Bacardi (2)
+    Jack Daniels (4)
+    Cointreau (8)
+    Hendricks (1)
+    Henny (3)
+    Fireball (3)
+    Absolut (10)
+    Twisted Tea (11)
+    Smirnoff Ice (1)
+    Baileys (4)
+    Kahlua (4)
+    Grand Marnier (6)
+    Patron (15)
+**/
+
+CREATE TABLE StoreItems (id INTEGER PRIMARY KEY, name TEXT, spirit TEXT, quantity INTEGER, price INTEGER);
+
+INSERT INTO StoreItems VALUES (1, "Tanq", "Gin", 15, 5);
+INSERT INTO StoreItems VALUES (2, "Captain Morgan", "Rum", 25, 6);
+INSERT INTO StoreItems VALUES (3, "Bacardi", "Rum", 30, 2);
+INSERT INTO StoreItems VALUES (4, "Jack Daniels", "Whiskey", 10, 4);
+INSERT INTO StoreItems VALUES (5, "Cointreau", "Liqueurs", 5, 8);
+INSERT INTO StoreItems VALUES (6, "Hendricks", "Gin", 9, 1);
+INSERT INTO StoreItems VALUES (7, "Henny", "Cognac", 3, 3);
+INSERT INTO StoreItems VALUES (8, "Fireball", "Whiskey", 20, 5);
+INSERT INTO StoreItems VALUES (9, "Absolut", "Vodka", 7, 10);
+INSERT INTO StoreItems VALUES (10, "Twisted Tea", "Coolers", 100, 11);
+INSERT INTO StoreItems VALUES (11, "Smirnoff Ice", "Coolers", 20, 1);
+INSERT INTO StoreItems VALUES (12, "Baileys", "Liqueurs", 3, 4);
+INSERT INTO StoreItems VALUES (13, "Kahlua", "Liqueurs", 3, 4);
+INSERT INTO StoreItems VALUES (14, "Grand Marnier", "Liqueurs", 1, 6);
+INSERT INTO StoreItems VALUES (15, "Patron", "Tequila", 2, 15);
+SELECT * FROM StoreItems;
+
+
+SELECT name FROM StoreItems ORDER BY price desc
